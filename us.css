@@ -7,10 +7,8 @@ body{
     user-select: none;
 }
 #image-track > .image{
-    width: 15vmin;
+    width: 30vmin;
     height: 56vmin;
-    /* width: 40vmin;
-    height: 56vmin; */
     object-fit: cover;
     object-position: 10% 50%;
 }
@@ -20,7 +18,7 @@ body{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-100%, -50%);
+    transform: translate(0%,-50%);
 }
 
 header{
@@ -32,7 +30,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* z-index: 10; */
 }
 
 #logo{
@@ -85,8 +82,11 @@ header ul li{
 .no-select{
     user-select: none;
 }
-.image{
-    width: 100vw; /* Ensure the image fills the viewport width */
-    height: auto; /* Maintain aspect ratio */
+/* .image{
+    /* width: 100vw; Ensure the image fills the viewport width */
+    /* height: auto; Maintain aspect ratio */
+    /* aspect-ratio: 9999/9;
     object-fit: cover;
-}
+    
+
+/* } */ 

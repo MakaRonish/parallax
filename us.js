@@ -32,3 +32,4 @@ for(const image of track.getElementsByClassName("image")){
 
 }
 }
+
