@@ -1,4 +1,4 @@
-body{
+/* body{
     height: 100vh;
     width: 100vw;
     background: linear-gradient(#03045e, #000000);
@@ -81,12 +81,120 @@ header ul li{
 }
 .no-select{
     user-select: none;
-}
+} */
 /* .image{
     /* width: 100vw; Ensure the image fills the viewport width */
-    /* height: auto; Maintain aspect ratio */
-    /* aspect-ratio: 9999/9;
+/* height: auto; Maintain aspect ratio */
+/* aspect-ratio: 9999/9;
     object-fit: cover;
     
 
-/* } */ 
+/* } */
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#03045e, #000000);
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#image-track>.image {
+    width: 30vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    color: #8d99ae;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 100px;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #8d99ae;
+    border-radius: 100px;
+}
+
+.nav:hover {
+    background: #8d99ae;
+    color: #27187e;
+}
+
+#right {
+    position: relative;
+    right: 0;
+}
+
+#words {
+    text-align: center;
+    margin-top: 80px;
+    color: #8d99ae;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.no-select {
+    user-select: none;
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    will-change: transform;
+}
+
+#image-track>.image {
+    width: 30vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+    will-change: object-position;
+}
